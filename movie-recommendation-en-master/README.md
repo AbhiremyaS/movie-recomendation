@@ -1,17 +1,9 @@
 # movie-recommendation
-The proposed Lexicon-based Sentiment Analysis in the twitter framework for sentiment
-classification. It consists of four  major modules:
+Collaborative Filtering is a technique or a method to predict a user’s taste and find the items that a user might prefer on the basis of information collected from various other users having similar tastes or preferences. It takes into consideration the basic fact that if person X and person Y have a certain reaction for some items then they might have the same opinion for other items too.
 
-Tweets Capturing Module:
-Tweepy is an easy-to-use Python library for accessing the Twitter API.Tweepy is an open source Python package that gives  a very convenient way to access the Twitter API with Python.
+Cosine Similarity:
+Cosine Similarity is a measurement that quantifies the similarity between two or more vectors. The cosine similarity is the cosine of the angle between vectors. The vectors are typically non-zero and are within an inner product space.
 
-Preprocessing Module:
-Before the actual sentiment analysis techniques are applied, a number of pre-processing steps are performed so as to make the tweet ready to be analyzed because the tweets obtained are in unstructured form and cannot be used as such without any processing. To avoid incorrect and misleading results, data must be pre-processed before analysis . 
+It reads the movie data from both Netflix and IMDB data sources, merges and formats the data into usable data frames,keeps only variables and observations of interest And finally, produce condensed csv files.
+The processed data along with the user data is used to visualize the output.The Netflix data will be used for the recommendation system based on an input movie, and the IMDB data for the recommendation of the most popular movies/series by year and genre. 
 
-Subjective Text Identification:
-This module performs two tasks: 
-(i) Extracting opinionated words from the source text 
-(ii) Slang detection and translation.
-
-Scoring Module:
-VADER is a lexicon and rule-based sentiment analysis tool that is specifically attuned to the sentiments expressed in social media. It is an entirely free open-source tool. VADER also takes into consideration word order and degree modifiers.The VADER Sentiment Analyzer was used to classify the preprocessed tweets as positive, negative, neutral.
